@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D AR Viewer</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="./libs/mindar/mindar-image-three.prod.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
+  
+</head>
+<body>
+
+  <div id="mindar-container"></div>
+  <div style="position: fixed; top: 20px; right: 40px; z-index: 999;">
+    <button id="rotate-x">Rotate X</button>
+    <button id="rotate-y">Rotate Y</button>
+    <button id="reset-model">Reset</button>
+  </div>
+
+  <script type="module" src="./viewer2.js"></script>
+</body>
+</html>

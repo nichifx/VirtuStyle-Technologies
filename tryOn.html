@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>AR Try-On Studio</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- MindAR library - IMPORTANT: Path corrected to be relative to the root -->
+    <!-- You need to download 'mindar-face-three.prod.js' and place it in the 'libs/mindar/' folder -->
+    <script src="./libs/mindar/mindar-face-three.prod.js"></script>
+
+    <!-- THREE.js (required by MindAR and for 3D model handling) -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
+    <!-- GLTFLoader for loading 3D models (commented out, as we are simulating with primitives) -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.150.1/examples/js/loaders/GLTFLoader.js"></script> 
+
+    <script type="module" src="./script.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="product.html">Product Detail</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="tryon-studio-section">
+            <h2>Live AR Try-On</h2>
+            <p id="status-message">Loading AR experience... Please enable camera access.</p>
+            <button id="btn" onclick="window.location.href='product.html';">Back</button>
+            <div id="ar-container">
+                <!-- The MindAR canvas will be injected here -->
+            </div>
+        </section>
+    </main>
+   
+</body>
+</html>

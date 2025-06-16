@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="product.html" class="active">Product Detail</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="product-detail-section">
+            <h2 id="product-name">Product View</h2>
+            <div class="product-info-container">
+              
+                <div class="product-details">
+                  <img src="./img/black_bucket_hat.png" alt="Black Bucket Hat" />
+                    <p id="product-description">Introducing the classic black bucket hat. With its sleek, minimal design, it’s the perfect match for any look — whether you're out in the city or keeping it cool in the sun.</p>
+                    <p class="product-price" id="product-price">RM69.00</p>
+                    <button onclick="window.location.href='tryon.html?hat=black_bucket_hat';">Try-On</button>
+                    <button class="btn black_bucket_hat-btn" id="view3DModelblack_bucket_hatBtn">View 3D Model</button>
+                    <button class="btn secondary-btn">Add to Cart</button>
+                </div>
+            </div>
+
+             <div class="product-info-container">
+              
+                <div class="product-details">
+                  <img src="./img/fashion_bucket_hat.png" alt="Denim Bucket Hat" />
+                    <p id="product-description">Introducing our Abstract Bucket Hat — where bold design meets everyday style. Featuring vibrant yellow abstract patterns on a sleek black background, this hat is made to turn heads. Whether you're out in the sun or leveling up your streetwear game, this statement piece is your perfect fit. Stylish, comfortable, and uniquely you. Stand out. Stay bold. Get yours today.</p>
+                    <p class="product-price" id="product-price">RM89.90</p>
+                    <button onclick="window.location.href='tryon.html?hat=fashion_bucket_hat';">Try-On</button>
+                    <button class="btn fashion_bucket_hat-btn" id="view3DModelDenim_bucket_hatBtn">View 3D Model</button>
+                    <button class="btn secondary-btn">Add to Cart</button>
+                </div>
+            </div>
+
+             <div class="product-info-container">
+              
+                <div class="product-details">
+                  <img src="./img/fashion_bucket_hat_from_africa.png" alt="Africa Bucket Hat" />
+                    <p id="product-description">Make a bold statement with the Africa bucket hat. Inspired by vibrant African patterns, it’s more than fashion — it’s culture, color, and confidence combined.</p>
+                    <p class="product-price" id="product-price">RM199.00</p>
+                    <button onclick="window.location.href='tryon.html?hat=bucket_hat_from_africa';">Try-On</button>
+                    <button class="btn bucket_hat_from_africa-btn" id="view3DModelbucket_hat_from_africaBtn">View 3D Model</button>
+                    <button class="btn secondary-btn">Add to Cart</button>
+                </div>
+            </div>
+            <script>
+              document.getElementById("view3DModelblack_bucket_hatBtn").addEventListener("click", () => {
+                window.location.href = "view-3d.html";
+              });
+
+              document.getElementById("view3DModelDenim_bucket_hatBtn").addEventListener("click", () => {
+                window.location.href = "view-3d-2.html";
+              });
+
+              document.getElementById("view3DModelbucket_hat_from_africaBtn").addEventListener("click", () => {
+                window.location.href = "view-3d-3.html";
+              });
+            </script>
+
+</body>
+</html>
